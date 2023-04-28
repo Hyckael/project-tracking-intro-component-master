@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Inter:wght@400;700&family=Red+Hat+Display:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Inter:wght@400;700&family=Red+Hat+Display:wght@500&display=swap');
-:root{
-    
-/* Primary
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Inter:wght@400;700&family=Red+Hat+Display:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Inter:wght@400;700&family=Red+Hat+Display:wght@500&display=swap");
+:root {
+  /* Primary
 font-family: 'Barlow Condensed', sans-serif;
 font-family: 'Inter', sans-serif;
 font-family: 'Red Hat Display', sans-serif;
@@ -14,41 +13,41 @@ font-family: 'Red Hat Display', sans-serif;
 
 */
 
---Red: hsl(0, 100%, 68%);
+  --Red: hsl(0, 100%, 68%);
 
-/* Neutral */
+  /* Neutral */
 
---Very-Dark-Blue: hsl(230, 29%, 20%);
---Dark-Grayish-Blue: hsl(230, 11%, 40%);
---Grayish-Blue: hsl(231, 7%, 65%);
---Light-Grayish-Blue: hsl(207, 33%, 95%);
+  --Very-Dark-Blue: hsl(230, 29%, 20%);
+  --Dark-Grayish-Blue: hsl(230, 11%, 40%);
+  --Grayish-Blue: hsl(231, 7%, 65%);
+  --Light-Grayish-Blue: hsl(207, 33%, 95%);
 }
-*{
+* {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
 }
 
-header{
+header {
   position: absolute;
   z-index: 1000;
   width: 92%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5% 0% 0% 12%;
-
+  padding: 5% 0% 0% 8%;
 }
-main{
+main {
   height: 100vh;
   width: 100%;
-  padding-left: 12%;
+  padding-left: 8%;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
-.container{
+.container {
   overflow: hidden;
   position: relative;
   height: 100%;
@@ -57,14 +56,18 @@ main{
   align-items: center;
   justify-content: center;
 }
-.responsive{
+.responsive {
   position: relative;
   display: none;
+  background: url("../images/icon-hamburger.svg");
+  background-repeat: no-repeat;
+  height: 10%;
+  width: 10%;
 }
-.responsive img{
+.responsive img {
   position: absolute;
 }
-.card-g{
+.card-g {
   height: 80%;
   width: 50%;
   display: flex;
@@ -74,48 +77,49 @@ main{
   line-height: 4rem;
 }
 
-.card-g .Dashboard .new{
+.card-g .Dashboard .new {
   background: var(--Very-Dark-Blue);
   color: var(--Light-Grayish-Blue);
   border-radius: 10px;
   text-transform: none;
   letter-spacing: 0;
-  padding: .2rem .7rem .2rem .7rem;
+  padding: 0.2rem 0.7rem 0.2rem 0.7rem;
 }
-.text-bottom{
+.text-bottom {
   display: flex;
   align-items: center;
   width: 100%;
   gap: 3rem;
 }
-.card-g h1{
+.card-g h1 {
   font-size: 48px;
   text-transform: uppercase;
 }
-.card-d{
+.card-d {
   height: 100%;
   width: 60%;
-  background: url(./images/illustration-devices.svg);
+  background: url("../images/illustration-devices.svg");
   background-repeat: no-repeat;
-  background-position: -10% 70%;
+  background-position: -10% 60%;
   background-size: 130%;
   justify-content: center;
   align-items: center;
 }
-.text-bottom p, .Dashboard {
+.text-bottom p,
+.Dashboard {
   color: var(--Grayish-Blue);
   text-transform: uppercase;
-  letter-spacing: .4rem;
+  letter-spacing: 0.2rem;
 }
-.Pro{
-  padding:.9rem 0rem 6rem;
+.Pro {
+  padding: 0.9rem 0rem 6rem;
   font-size: 18px;
   width: 45%;
   line-height: 20px;
   color: var(--Dark-Grayish-Blue);
 }
-.card-d::before{
-  content: '';
+.card-d::before {
+  content: "";
   height: 56%;
   width: 58%;
   border-radius: 0 0 0 5rem;
@@ -123,129 +127,343 @@ main{
   background-color: var(--Light-Grayish-Blue);
   position: absolute;
 }
-.url{
+.url {
   width: 40%;
   display: flex;
   justify-content: space-around;
   align-items: start;
-  
 }
-.url .font{
-  margin-top: .4rem;
-  height: .5rem;
-  width: .5rem;
+.url .font {
+  margin-top: 0.4rem;
+  height: 0.5rem;
+  width: 0.5rem;
   background: var(--Grayish-Blue);
-  border-radius:100%;
+  border-radius: 100%;
 }
 .url a {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
   text-transform: uppercase;
-  
 }
 .url a:hover {
-  text-decoration: underline;  
+  text-decoration: underline;
 }
 .url .lien {
   text-decoration: none;
   color: var(--Very-Dark-Blue);
-  font-weight: 700; 
+  font-weight: 700;
 }
 .url .txt {
   text-decoration: none;
   color: var(--Dark-Grayish-Blue);
 }
-button{
+button {
   cursor: pointer;
   border-radius: 8px;
   border: none;
   height: 70%;
-  width: 25%;
+  width: 30%;
   color: var(--Light-Grayish-Blue);
   background: var(--Red);
-  text-transform: uppercase ;
+  text-transform: uppercase;
 }
-.attribution { 
-    font-size: 16px; 
-    text-align: center; 
+.attribution {
+  font-size: 16px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+.attribution a:hover {
+  color: var(--Red);
+}
+@media (max-width: 1438px) {
+  main {
+    height: 100vh;
+    width: 100%;
   }
-  .attribution a {
-    color: hsl(228, 45%, 44%);
-    text-decoration: none;
+  .url {
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
   }
-  .attribution a:hover {
-    color: var(--Red);
+  .card-d {
+    height: 100%;
+    width: 60%;
+    background: url("../images/illustration-devices.svg");
+    background-repeat: no-repeat;
+    background-position: -10% 45%;
+    background-size: 130%;
+    justify-content: center;
+    align-items: center;
   }
-  @media  (max-width: 375px){
-    main{
-      height: 124vh;
-      padding-left: 1.8rem;
-    }
-    .container{
-      height: 58rem;
-      width: 100%;
-      flex-direction: column-reverse;
-    }
-    .card-d{
-      height: 60%;
-      width: 50%;
-      background: url(./images/illustration-devices.svg);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 25rem;
-    }
-    .card-d::before{
-      content: '';
-      height: 50%;
-      width: 100%;
-      border-radius: 0 0 0 5rem;
-      background-color: var(--Light-Grayish-Blue);
-      position: absolute;
-    }
-    .card-g{
-      z-index: 2;
-      height: 80%;
-      width: 100%;
-    }
-    .text-bottom p, .Dashboard {
-      color: var(--Grayish-Blue);
-      text-transform: uppercase;
-      line-height: 2rem;
-      font-size: 15px;
-      letter-spacing: 0.1rem;
-      width: 87%;
-    }
-    .text-bottom p{
-      font-size: 14px;
-    }
-    .text-bottom{
-      gap: 1rem;
-    }
-    .card-g h1{
-      padding:.9rem 0rem 1rem;
-      font-size: 28px;
-      line-height: 1;
-      text-transform: uppercase;
-    }
-    .Pro{
-      padding:.9rem 0rem 1rem;
-      font-size: 18px;
-      width: 18rem;
-      color: var(--Dark-Grayish-Blue);
-    }
-    button{
-      height: 3rem;
-      width: 15rem;
-      color: var(--Light-Grayish-Blue);
-      background: var(--Red);
-      text-transform: uppercase ;
-    }
-    .url{
-      display: none;
-    }
-    .responsive{
-      display: flex;
-    }
-    .close{
-      visibility: hidden;
-    }
+  .card-d::before {
+    content: "";
+    height: 44%;
+    width: 58%;
+    border-radius: 0 0 0 5rem;
+    z-index: -1;
+    background-color: var(--Light-Grayish-Blue);
+    position: absolute;
   }
+  button {
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    height: 70%;
+    width: 40%;
+    color: var(--Light-Grayish-Blue);
+    background: var(--Red);
+    text-transform: uppercase;
+  }
+}
+@media (max-width: 1000px) {
+  .url {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+  }
+  .card-d {
+    height: 100%;
+    width: 70%;
+    background: url("../images/illustration-devices.svg");
+    background-repeat: no-repeat;
+    background-position: -8% 45%;
+    background-size: 140%;
+    justify-content: center;
+    align-items: center;
+  }
+  .text-bottom p,
+  .Dashboard {
+    color: var(--Grayish-Blue);
+    text-transform: uppercase;
+    line-height: 2rem;
+    font-size: 15px;
+    letter-spacing: 0.1rem;
+    width: 100%;
+  }
+  .card-g h1 {
+    padding: 0.9rem 0rem 1rem;
+    font-size: 30px;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  .Pro {
+    padding: 0.9rem 0rem 6rem;
+    font-size: 18px;
+    width: 80%;
+    line-height: 20px;
+    color: var(--Dark-Grayish-Blue);
+  }
+  button {
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    height: 80%;
+    width: 100%;
+    color: var(--Light-Grayish-Blue);
+    background: var(--Red);
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 710px) {
+  main {
+    height: 110vh;
+    padding-left: 1.8rem;
+  }
+  .container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  .card-d {
+    height: 65%;
+    width: 100%;
+    background: url("../images/illustration-devices.svg");
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: -72% 99%;
+    background-size: 118%;
+  }
+  .card-d::before {
+    content: "";
+    height: 50%;
+    width: 58%;
+    border-radius: 0 0 0 5rem;
+    z-index: -1;
+    background-color: var(--Light-Grayish-Blue);
+    position: absolute;
+    left: 43%;
+  }
+  .card-g {
+    z-index: 2;
+    height: 45%;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    line-height: 4rem;
+    padding-top: 10%;
+  }
+
+  .text-bottom p {
+    font-size: 15px;
+  }
+  .text-bottom {
+    gap: 1rem;
+  }
+  .card-g h1 {
+    padding: 0.9rem 0rem 1rem;
+    font-size: 33px;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  .Pro {
+    padding: 0.9rem 0rem 1rem;
+    font-size: 20px;
+    width: 90%;
+    color: var(--Dark-Grayish-Blue);
+  }
+  button {
+    height: 3rem;
+    width: 15rem;
+    color: var(--Light-Grayish-Blue);
+    background: var(--Red);
+    text-transform: uppercase;
+  }
+
+}
+
+@media (max-width: 475px) {
+  main {
+    height: 110vh;
+    padding-left: 1.8rem;
+  }
+  .container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  .card-d {
+    height: 50%;
+    width: 100%;
+    background: url("../images/illustration-devices.svg");
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 5% 75%;
+    background-size: 140%;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-d::before {
+    content: "";
+    height: 50%;
+    width: 58%;
+    border-radius: 0 0 0 5rem;
+    z-index: -1;
+    background-color: var(--Light-Grayish-Blue);
+    position: absolute;
+    left: 43%;
+  }
+  .card-g {
+    z-index: 2;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    line-height: 4rem;
+    padding-top: 10%;
+  }
+  .text-bottom p,
+  .Dashboard {
+    color: var(--Grayish-Blue);
+    text-transform: uppercase;
+    line-height: 2rem;
+    font-size: 15px;
+    letter-spacing: 0.1rem;
+    width: 87%;
+  }
+  .text-bottom p {
+    font-size: 15px;
+  }
+  .text-bottom {
+    gap: 1rem;
+  }
+  .card-g h1 {
+    padding: 0.9rem 0rem 1rem;
+    font-size: 33px;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  .Pro {
+    padding: 0.9rem 0rem 1rem;
+    font-size: 20px;
+    width: 90%;
+    color: var(--Dark-Grayish-Blue);
+  }
+  button {
+    height: 3rem;
+    width: 15rem;
+    color: var(--Light-Grayish-Blue);
+    background: var(--Red);
+    text-transform: uppercase;
+  }
+
+  .responsive {
+    display: block;
+    padding-bottom: 8%;
+    cursor: pointer;
+    z-index: 20;
+  }
+
+
+  .url {
+    background: white;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 80%;
+    left: 55%;
+    gap: 1rem;
+    padding: 1rem 0;
+    transform: translate(-50%, -100%);
+    border-radius: 8px;
+    box-shadow: -3px 3px 15px 1px rgba(0, 0, 0, 0.75);
+    transition: transform 0.4s ease;
+
+  }
+
+  .url .font {
+    width: 90%;
+    height: 1px;
+  }
+  .url.active {
+    transform: translate(-50%, 8rem);
+  }
+  .responsive.active{
+    background: url("../images/icon-close.svg");
+    background-repeat: no-repeat;
+    height: 10%;
+    width: 10%;
+  }
+}
